@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-box {
+    border: 1px solid black;
+    padding: 20px;
+    max-width: 400px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 200px;
+    padding: 4px;
+    margin-bottom: 6px;
+}
+
+input[type="range"] {
+    width: 200px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+button {
+    padding: 6px 12px;
+    margin-right: 5px;
+}
+
+a {
+    color: purple;
+    text-decoration: underline;
+}

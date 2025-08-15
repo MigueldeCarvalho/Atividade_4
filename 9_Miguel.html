@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="9_Miguel.css" />
+</head>
+<body>
+
+  <h1>Formulário</h1>
+  <p><strong>Preencher as informações:</strong></p>
+
+  <form>
+    <label>Insira uma Imagem:
+      <input type="file" name="imagem">
+    </label><br><br>
+
+    
+    <label>Nome:
+      <input type="text" name="nome" placeholder="Insira seu nome" maxlength="250">
+    </label>
+    <span class="error">Esse campo deve ter no máximo 250 caracteres</span><br><br>
+
+   
+    <label>Sobrenome:
+      <input type="text" name="sobrenome" placeholder="Insira seu sobrenome" maxlength="250">
+    </label>
+    <span class="error">Esse campo deve ter no máximo 250 caracteres</span><br><br>
+
+    
+    <label>Data de nascimento:
+      <input type="date" name="data">
+    </label><br><br>
+
+   
+    <label>Idade:
+      <input type="number" name="idade" min="0">
+    </label><br><br>
+
+   
+    <label>E-mail:
+      <input type="email" name="email" placeholder="Insira seu e-mail" required>
+    </label>
+    <span class="error">Esse campo deve ser obrigatório</span><br><br>
+
+    
+    <label>Formação Acadêmica:</label><br>
+    <input type="radio" name="formacao" value="fundamental"> Ensino Fundamental<br>
+    <input type="radio" name="formacao" value="medio"> Ensino Médio<br>
+    <input type="radio" name="formacao" value="superior"> Ensino Superior<br>
+    <input type="radio" name="formacao" value="pos-especializacao"> Pós Graduação - Especialização<br>
+    <input type="radio" name="formacao" value="pos-mestrado"> Pós Graduação - Mestrado<br>
+    <input type="radio" name="formacao" value="pos-doutorado"> Pós Graduação - Doutorado<br><br>
+
+    
+    <label>Nome do Curso:
+      <select name="curso" disabled>
+        <option>Desenvolvimento e Análise de Sistemas</option>
+      </select>
+    </label>
+    <span class="error">Este campo deve estar desabilitado</span><br><br>
+
+   
+    <label>Situação:</label><br>
+    <input type="radio" name="situacao" value="andamento" disabled> Em Andamento<br>
+    <input type="radio" name="situacao" value="completo" disabled> Completo<br>
+    <input type="radio" name="situacao" value="incompleto" disabled> Incompleto<br>
+    <span class="error">Estes campos devem estar desabilitados</span><br><br>
+
+    
+    <label>Qual sua satisfação em relação ao curso?
+      <input type="range" name="satisfacao" min="0" max="10">
+    </label><br><br>
+
+    <label>Descreva como está sendo sua experiência até o momento:</label><br>
+    <textarea placeholder="Descreva aqui..."></textarea><br><br>
+
+ 
+    <label>Escolha uma senha:
+      <input type="password" name="senha" placeholder="Digite sua Senha">
+    </label><br><br>
+
+    <label>Confirme sua senha:
+      <input type="password" name="confirmar_senha" placeholder="Digite sua Senha">
+    </label><br><br>
+
+
+    <label>Confirme:</label><br>
+    <input type="checkbox" name="termos"> Você concorda com os termos?<br>
+    <input type="checkbox" name="notificacoes"> Você gostaria de receber e-mails com notificações?<br><br>
+
+    <button type="submit">Salvar</button>
+  </form>
+
+</body>
+</html>
